@@ -1,0 +1,28 @@
+{
+  "name": "testeBlank",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
+  "dependencies": {
+    "@oracle/oraclejet": "~5.0.0",
+    "jsencrypt": "^3.0.0-beta.1",
+    "jsqr": "^1.0.4",
+    "node-rsa": "^1.0.0",
+    "qr-code-scanner": "^1.0.5",
+    "qrcode-reader": "^1.0.4",
+    "react-native-camera": "^1.1.4",
+    "socket.io-client": "^2.1.1"
+  },
+  "devDependencies": {
+    "@oracle/grunt-oraclejet": "~5.0.0",
+    "@oracle/oraclejet-tooling": "~5.0.0",
+    "grunt": "^1.0.1",
+    "grunt-war": "^0.5.1",
+    "load-grunt-config": "0.19.2",
+    "qunit": "^2.4.1",
+    "qunit-reporter-junit": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

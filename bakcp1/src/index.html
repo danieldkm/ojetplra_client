@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>UniFil - PLRA - Plataforma de Reconhecimento de Alunos</title>
+        <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="viewport-fit=cover, initial-scale=1.0"/>
+        <link rel="icon" type="image/x-icon" href="css/images/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="css/images/touchicon.png">
+        <meta name="apple-mobile-web-app-title" content="PLRA">
+
+        <!-- injector:theme -->
+        <link rel="stylesheet" href="css/libs/oj/v5.0.0/alta/oj-alta-min.css" id="css" />
+        <link rel="stylesheet" href="css/fif/android/fif.css"/>
+        <!-- endinjector -->
+        <!-- <link rel="stylesheet" href="css/style.css"/> -->
+        
+    </head>
+    <body>
+        
+        <div id="page" class="oj-offcanvas-outer-wrapper oj-offcanvas-page">
+            <!--nav-->
+            <div id="navDrawer" role="navigation" class="oj-hybrid-applayout-offcanvas oj-offcanvas-start oj-contrast-marker">
+                <!-- Navigation -->
+            <oj-navigation-list id='appNavList' class='oj-navigationlist-stack-icon-label'
+              on-selection-changed='[[drawerChange]]'
+              selection='{{router.stateId}}'>
+              <ul>
+
+              <li id="initialize">
+                <a href="#">
+                <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24"></span>
+                    QRCode
+                </a>
+              </li>
+              <li id="alunos">
+                <a href="#">
+                <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-person-icon-24"></span>
+                Alunos
+                </a>
+              </li>
+              <li id="signin" style="margin-top: 25px">
+                <a href="#">
+                <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-signout-icon-24"></span>
+                Sign Out
+                </a>
+              </li>
+              </ul>
+            </oj-navigation-list>
+            </div>
+            <!-- page -->
+            <div id="pageContent" data-bind="ojModule: moduleConfig" style="min-height: 100vh;">
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/libs/require/require.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

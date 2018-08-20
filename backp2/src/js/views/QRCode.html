@@ -1,0 +1,17 @@
+<div class="oj-applayout-content" style="height:100vh; padding-top: 60px;">
+	<div class="oj-flex oj-flex-items-pad">
+		<div class="oj-sm-12 oj-flex-item" align="center">
+			<div id="loadingMessage">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>
+			<canvas id="canvasElement" height="480" width="640"></canvas>
+		</div>
+	</div>
+	<div style="display:none" id="modalDialog1" title="Leitura QRCode" data-bind="ojComponent:{component: 'ojDialog', initialVisibility: 'hide'}">
+		<div class="oj-dialog-body">
+			<div><b>QRCode:</b> <span id="outputData"></span></div>
+		</div>
+		<div class="oj-dialog-footer">
+			<button id="okButton" data-bind="ojComponent: {component: 'ojButton', label: 'OK'}"> </button>
+		</div>
+	</div>
+</div>
+

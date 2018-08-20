@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <!-- Metas HTML
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>PLRA - Plataforma de Reconhecimento de Alunos</title>
+    <link rel="shortcut icon" href="css/images/londrinense/favicon.png">
+    <link rel="apple-touch-icon" href="css/images/londrinense/favicon.png"/>
+
+    <!-- Metas Compatibilidade de Navegador
+    ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Metas Tablet/Mobile
+    ================================================== -->
+    <meta name="theme-color" content="#003977">
+    <meta name="msapplication-navbutton-color" content="#003977">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1"/><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <!-- Metas Google
+    ================================================== -->
+    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="Vitor Arthuzo - Tecnologia da Informação - Instituto Filadélfia de Londrina v1.0"/>
+    <meta name="description" content="Portal Londrinense/UniFil"/>
+
+    <!-- CSS Injector
+    ================================================== -->
+    <!-- injector:theme -->
+    <link rel="stylesheet" href="css/libs/oj/v5.0.0/alta/oj-alta-min.css" id="css" />
+    <link rel="stylesheet" href="css/fif/android/fif.css"/>
+    <!-- endinjector -->
+
+    <style type="text/css">
+      .oj-listview-no-data-message.oj-listview-empty-text{
+        text-align: center !important;
+      }
+    </style>
+  </head>
+  <body>      
+    
+    <div id="page" class="oj-offcanvas-outer-wrapper oj-offcanvas-page">
+      
+      <!-- Início Barra Topo -->
+      <div id="navDrawer" role="navigation" class="oj-hybrid-applayout-offcanvas oj-offcanvas-start oj-contrast-marker">      
+        <oj-navigation-list id="appNavList" class="oj-navigationlist-stack-icon-label" on-selection-changed="[[drawerChange]]" selection="{{router.stateId}}">
+          <ul>
+            <li id="initialize">
+              <a href="#">
+                <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24"></span>
+                Leitura QRCode
+              </a>
+              <ul>
+                <li id="alunos">
+                  <a href="#">
+                    <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-person-icon-24"></span>
+                    Chamada Alunos
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="alunos">
+              <a href="#">
+                <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-person-icon-24"></span>
+                Chamada Alunos
+              </a>
+            </li>
+            <li id="login">
+              <a href="#">
+                <span class="oj-navigationlist-item-icon demo-icon-font-24 demo-signout-icon-24"></span>
+                Sair
+              </a>
+            </li>
+          </ul>
+        </oj-navigation-list>
+      </div>
+      <!-- Fim Barra Topo -->
+      
+      <!-- Início Conteúdo Página -->
+      <div id="pageContent" data-bind="ojModule: moduleConfig" style="min-height:100vh;"></div>
+      <!-- Fim Conteúdo Página -->
+    
+    </div>
+    
+    <!-- Scripts & Plugins Padrão
+    ================================================== -->
+    <script type="text/javascript" src="js/libs/require/require.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>

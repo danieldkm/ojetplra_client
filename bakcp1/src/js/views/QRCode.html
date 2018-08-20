@@ -1,0 +1,48 @@
+<div class="oj-applayout-content" style="height:100vh; padding-top: 60px;">
+  <!-- <div role="main" class="oj-hybrid-applayout-content" style="height:100%;overflow:auto;"> -->
+
+    <!-- <div class="demo-dashboard-container oj-flex oj-sm-flex-direction-column oj-sm-flex-wrap-nowrap"> -->
+      	
+      	<!-- <h3 class="demo-flex-zero demo-dashboard-title">Incidents Needing Attention</h3>
+
+    	<div class="oj-sm-flex-1 demo-pie-chart-container">
+			<oj-button id='button1' on-oj-action='[[buttonClick]]'>Start</oj-button>
+			<h5>Custom file picker</h5>
+			<oj-file-picker class='oj-filepicker-custom' selectOn='click' on-oj-select='[[selectListener]]'>
+				<oj-button slot='trigger'>
+					<span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-arrowbox-n'></span>
+					Upload
+				</oj-button>
+			</oj-file-picker>
+			<h2>Resultado:</h2>
+    		<div id="preview"></div>
+    	</div> -->
+	
+    	<div class="oj-flex oj-flex-items-pad">
+    		<div class="oj-sm-12 oj-flex-item" align="center">
+    			<STYLE TYPE="text/css">
+		        <!--
+		          @import url(css/style.css);
+		        -->
+		        </STYLE>
+				<div id="loadingMessage">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>
+	  			<canvas id="canvasElement" height="480" width="640"></canvas>
+				<!-- <div id="output" hidden="">
+	    			<div id="outputMessage">No QR code detected.</div>
+	    			<div hidden=""><b>Data:</b> <span id="outputData"></span></div>
+	  			</div> -->
+  			</div>
+    	</div>
+
+		<div style="display:none" id="modalDialog1" title="Leitura QRCode" data-bind="ojComponent:{component: 'ojDialog', initialVisibility: 'hide'}">
+			<div class="oj-dialog-body">
+				<div><b>QRCode:</b> <span id="outputData"></span></div>
+			</div>
+			<div class="oj-dialog-footer">
+				<button id="okButton" data-bind="ojComponent: {component: 'ojButton', label: 'OK'}"> </button>
+			</div>
+		</div>
+    <!-- </div> -->
+  <!-- </div> -->
+</div>
+

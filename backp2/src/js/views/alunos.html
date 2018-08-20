@@ -1,0 +1,39 @@
+<div class=" oj-web-applayout-content">
+  <div class="oj-flex" style="padding-bottom:20px;padding-top:10px;">
+    <div class="oj-xl-5 oj-lg-5 oj-md-12 oj-sm-12" style="text-align:right;">
+      <object type="image/svg+xml" data="css/images/londrinense/logoLondrinenseColor.svg" height="50" /></object>
+    </div>
+    <div class="oj-xl-7 oj-lg-7 oj-md-12 oj-sm-12" style="text-align:left;padding-top:5px;">
+      <h2 style="padding-left:15px;"><b>PLATAFORMA DE RECONHECIMENTO DE ALUNOS</b></h2>
+    </div>
+  </div>
+
+  <div id="listviewwrapper">
+    <oj-list-view id="listview" aria-label="list with static data" data="[[dataProvider]]" item.renderer="[[oj.KnockoutTemplateUtils.getRenderer(selectTemplate, true)]]" selection-mode="multiple"></oj-list-view>
+  </div>
+
+  <script type="text/html" id="item_template">
+    <li data-bind="attr: {id: $data['name']}">
+      <div class="oj-flex">
+        <div class="oj-xl-2 oj-lg-2 oj-md-2 oj-sm-12">
+          <oj-avatar role="img" size="xxl" data-bind="attr: {src: foto, alt: name}"></oj-avatar>
+        </div>
+        <div class="oj-xl-9 oj-ls-9 oj-md-9 oj-sm-12" style="color:#044BA3;">
+          <div class="oj-flex row">
+            <div class="oj-lg-12" style="padding-top:50px;">
+              <p class="header" data-bind="text: name" style="font-size:30pt;"></p>
+            </div>
+          </div>
+          <div class="oj-flex row" style="padding-top:30px;">
+            <div class="oj-lg-4 oj-md-4 oj-sm-12">
+              <span class="data" style="font-size:30pt;"><b>Turma: </b><span data-bind="text: turma"></span></span>
+            </div>
+            <div class="oj-lg-8 oj-md-8 oj-sm-12">
+              <span class="data" style="font-size:30pt;"><b>Curso: </b><span data-bind="text: curso"></span></span>
+          </div>    
+        </div>
+      </div>
+    </li>
+  </script>
+
+</div>
